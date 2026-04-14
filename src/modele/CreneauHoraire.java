@@ -1,16 +1,17 @@
 package modele;
 
 import modele.enums.Jour;
+import java.time.LocalTime;
 
 public class CreneauHoraire {
 
     private int idCreneau;
     private Jour jour;
-    private String heureDebut;
-    private String heureFin;
+    private LocalTime heureDebut;
+    private LocalTime heureFin;
 
     // Constructeur
-    public CreneauHoraire(int idCreneau, Jour jour, String heureDebut, String heureFin) {
+    public CreneauHoraire(int idCreneau, Jour jour, LocalTime heureDebut, LocalTime heureFin) {
         this.idCreneau = idCreneau;
         this.jour = jour;
         this.heureDebut = heureDebut;
@@ -26,11 +27,11 @@ public class CreneauHoraire {
         return jour;
     }
 
-    public String getHeureDebut() {
+    public LocalTime getHeureDebut() {
         return heureDebut;
     }
 
-    public String getHeureFin() {
+    public LocalTime getHeureFin() {
         return heureFin;
     }
 
@@ -39,21 +40,16 @@ public class CreneauHoraire {
         this.jour = jour;
     }
 
-    public void setHeureDebut(String heureDebut) {
+    public void setHeureDebut(LocalTime heureDebut) {
         this.heureDebut = heureDebut;
     }
 
-    public void setHeureFin(String heureFin) {
+    public void setHeureFin(LocalTime heureFin) {
         this.heureFin = heureFin;
     }
 
     @Override
     public String toString() {
-        return "CreneauHoraire{" +
-                "idCreneau=" + idCreneau +
-                ", jour='" + jour + '\'' +
-                ", heureDebut='" + heureDebut + '\'' +
-                ", heureFin='" + heureFin + '\'' +
-                '}';
+        return jour + " " + heureDebut + " - " + heureFin;
     }
 }

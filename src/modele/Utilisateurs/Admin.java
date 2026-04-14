@@ -4,6 +4,8 @@ import modele.enums.Role;
 
 public class Admin extends Utilisateur {
 
+    private Role role;
+
     // Constructeur
     public Admin(int id, String prenom, String nom, String email, String motDePasse, Role role) {
         super(id, prenom, nom, email, motDePasse, role);

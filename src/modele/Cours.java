@@ -5,64 +5,24 @@ import modele.Utilisateurs.Enseignant;
 public class Cours {
 
     private int idCours;
-    private String matiere;
+    private Matiere matiere;
     private Enseignant enseignant;
-    private Salle salle;
-    private CreneauHoraire creneau;
 
-    // Constructeur
-    public Cours(int idCours, String matiere, Enseignant enseignant,
-                 Salle salle, CreneauHoraire creneau) {
-
-        this.idCours = idCours;
-        this.matiere = matiere;
-        this.enseignant = enseignant;
-        this.salle = salle;
-        this.creneau = creneau;
+    public Cours(int idCours, Matiere matiere, Enseignant enseignant) {
+        this.idCours     = idCours;
+        this.matiere     = matiere;
+        this.enseignant  = enseignant;
     }
 
-    // Getters
-    public int getIdCours() {
-        return idCours;
-    }
+    public int getIdCours()          { return idCours; }
+    public Matiere getMatiere()      { return matiere; }
+    public Enseignant getEnseignant(){ return enseignant; }
 
-    public String getMatiere() {
-        return matiere;
-    }
-
-    public Enseignant getEnseignant() {
-        return enseignant;
-    }
-
-    public Salle getSalle() {
-        return salle;
-    }
-
-    public CreneauHoraire getCreneau() {
-        return creneau;
-    }
-
-    // Setters
-    public void setMatiere(String matiere) {
-        this.matiere = matiere;
-    }
-
-    public void setSalle(Salle salle) {
-        this.salle = salle;
-    }
-
-    public void setCreneau(CreneauHoraire creneau) {
-        this.creneau = creneau;
-    }
+    public void setMatiere(Matiere matiere)          { this.matiere = matiere; }
+    public void setEnseignant(Enseignant enseignant) { this.enseignant = enseignant; }
 
     @Override
     public String toString() {
-        return "Cours{" +
-                "idCours=" + idCours +
-                ", matiere='" + matiere + '\'' +
-                ", enseignant=" + enseignant.getNom() +
-                ", salle=" + salle.getNumero() +
-                ", creneau=" + creneau.getJour() + " " + creneau.getHeureDebut() +
-                '}';
+        return matiere.getNomMatiere() + " — " + enseignant.getNom();
     }
 }

@@ -38,9 +38,10 @@ public abstract class Utilisateur {
     public String getEmail() {
         return email;
     }
-    public String getmotDePasse() {
+    public String getMotDePasse() {
         return motDePasse;
     }
+    public Role getRole(){return role;};
 
     public void setNom(String nom) {
         this.nom = nom;

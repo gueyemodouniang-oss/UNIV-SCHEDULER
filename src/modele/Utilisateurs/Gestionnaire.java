@@ -5,6 +5,7 @@ import modele.enums.Role;
 public class Gestionnaire extends Utilisateur {
 
     private String service;
+    private Role role;
 
     // Constructeur
     public Gestionnaire(int id, String prenom, String nom, String email,

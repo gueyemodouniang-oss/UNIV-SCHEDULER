@@ -24,4 +24,17 @@ public class Matiere {
     public int getVolumeHoraire() {
         return volumeHoraire;
     }
+
+    public void setNomMatiere(String nomMatiere) {
+        this.nomMatiere = nomMatiere;
+    }
+
+    public void setVolumeHoraire(int volumeHoraire) {
+        this.volumeHoraire = volumeHoraire;
+    }
+
+    @Override
+    public String toString() {
+        return nomMatiere + " (" + volumeHoraire + "h)";
+    }
 }

@@ -36,11 +36,5 @@ public class Equipement {
     }
 
     @Override
-    public String toString() {
-        return "Equipement{" +
-                "idEquipement=" + idEquipement +
-                ", nomEquipement='" + nomEquipement + '\'' +
-                ", description='" + description + '\'' +
-                '}';
-    }
+    public String toString() {return nomEquipement;}
 }

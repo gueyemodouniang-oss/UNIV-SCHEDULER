@@ -6,6 +6,7 @@ public class Enseignant extends Utilisateur {
 
     private String specialite;
     private String departement;
+    private Role role;
 
     // Constructeur
     public Enseignant(int id, String prenom, String nom, String email,
