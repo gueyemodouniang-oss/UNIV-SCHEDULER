@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"dao"},{"l":"dao.impl"},{"l":"dao.interfaces"},{"l":"modele"},{"l":"modele.enums"},{"l":"modele.Utilisateurs"},{"l":"service"},{"l":"vue.admin"},{"l":"vue.auth"},{"l":"vue.commun"},{"l":"vue.enseignant"},{"l":"vue.etudiant"},{"l":"vue.gestionnaire"}];updateSearchResults();
